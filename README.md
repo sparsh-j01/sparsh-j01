@@ -1,13 +1,100 @@
-#  About Me:
-CSE undergrad, third year, from India.<br>
-<br>**[Maven](https://github.com/sparsh-j01/maven-ai)**<br>A long-lived stateful voice worker separate from the serverless web app, a turn-based<br>STT → LLM → TTS pipeline over LiveKit/WebRTC, a tool-driven state machine, a live coding<br>round graded against hidden tests in a sandbox, and async rubric-scored reports.<br>Next.js 15 · TypeScript · Python · LiveKit · Postgres/pgvector · Inngest<br><br>Building a paper trading platform in Node + TS + Postgres, currently deep in matching engine territory.<br>Side quests mostly involve AI agents and trying to make LLMs do actual work.<br>
+# Hey, I'm Sparsh 
 
+Third-year CSE undergrad in India. I build real-time systems and AI products, and
+I run a student org that teaches financial literacy to people who never got taught it.
 
-##  Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/sparsh-jhunjhunwala/) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/https://x.com/sparsh_jjwala) 
+Most of what I build falls into one of two buckets: **things that have to happen
+right now** (voice pipelines, live classrooms, order matching) or **things that
+should have been taught in school** (money, markets, risk).
 
-#  Tech Stack:
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Neo4J](https://img.shields.io/badge/Neo4j-008CC1?style=for-the-badge&logo=neo4j&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![Sentry](https://img.shields.io/badge/sentry-%23362D59.svg?style=for-the-badge&logo=sentry&logoColor=white) ![Playwright](https://img.shields.io/badge/-playwright-%232EAD33?style=for-the-badge&logo=playwright&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![Fastify](https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi)
+---
 
+### What I'm working on
 
+**[Maven AI](https://github.com/sparsh-j01/maven-ai)** — real-time voice mock interviews
+Talk to a low-latency interviewer that takes clean turns and asks adaptive follow-ups,
+run a live coding round graded against hidden tests, and get back a rubric-scored
+report with a replayable transcript.
 
+The interesting part isn't the UI. It's a long-lived stateful voice worker sitting
+apart from the serverless web app, a turn-based STT → LLM → TTS loop over
+LiveKit/WebRTC, a tool-driven state machine that persists its cursor so an agent
+restart resumes where it left off, and a scorer I proved with an eval harness
+instead of assuming. Push-to-talk with no barge-in, so pausing mid-answer to think
+never cuts you off.
+
+`Next.js 15` · `TypeScript` · `Python` · `LiveKit` · `Postgres/pgvector` · `Inngest`
+
+**[OptiMarket](https://optimarket-psi.vercel.app)** — bond portfolio optimization that runs in your browser
+Nelson-Siegel yield curve, SLSQP optimizer, Monte Carlo VaR/CVaR, multi-scenario
+stress testing, on real FINRA TRACE data with actual CUSIPs.
+
+The whole SciPy optimizer is compiled to WebAssembly via Pyodide and runs
+client-side in a Web Worker. No backend, no cold start, no data leaving your
+device, and $0/month to keep online.
+
+`Next.js` · `TypeScript` · `Python` · `Pyodide/WASM` · `SciPy`
+
+**Atlas** *(private)* — live in-class quizzes from your own lecture material
+Upload a lecture PDF, AI builds a full editable deck — quiz, polls, word clouds —
+then run it live. Students join from their phones with a room code and 100+ of them
+answer the same question at the same instant while the leaderboard animates on the
+big screen. Mentimeter's visuals, Kahoot's competition, with an AI front door.
+
+`Next.js` · `TypeScript` · `Supabase Realtime` · `Claude API`
+
+**Ledgr** *(early)* — a paper trading platform in Node, TypeScript and Postgres.
+Currently deep in matching engine territory, working out how orders rest, cross
+and fill before anything gets built on top of them.
+
+**WhatsApp CRM** *(with [@RishvinReddy](https://github.com/RishvinReddy))* — a CRM that
+lives inside WhatsApp. Customers hold a normal conversation on Meta's WhatsApp Cloud
+API while Gemini handles intent; the business gets a real-time dashboard behind it.
+Grocery ordering is just the first vertical — the conversational layer drops onto
+any catalogue.
+
+---
+
+### Outside the terminal
+
+I'm **President of Finance Studio**, a student org teaching financial literacy to
+economically disadvantaged communities. We cover the basics that actually compound —
+budgeting, saving, credit, how debt really works — for people who were never given
+access to any of it.
+
+I also built a
+[bilingual financial literacy chatbot](https://github.com/sparsh-j01/financial-literacy-chatbot)
+on Gemini so the material is reachable in more than one language, and outside
+session hours.
+
+---
+
+### Tools I reach for
+
+**Languages** TypeScript · Python · JavaScript · Java
+
+**Frontend** Next.js · React · Tailwind
+
+**Backend** Node.js · FastAPI · Express · LiveKit · Inngest
+
+**Data** PostgreSQL · pgvector · Supabase · Redis · MongoDB · Prisma
+
+**AI** Claude API · Gemini · RAG · agent tooling
+
+**Infra** Docker · Kubernetes · AWS · Vercel · Cloudflare · GitHub Actions
+
+---
+
+### Currently
+
+- Chasing **GitHub Foundations** and **Claude Architect** certs this month
+- Building the Ledgr matching engine
+- Trying to make LLMs do work that survives contact with production
+
+---
+
+### Reach me
+
+[LinkedIn](https://www.linkedin.com/in/sparsh-jhunjhunwala/) ·
+[X](https://x.com/sparsh_jjwala) ·
+[sparsh.jjwala@gmail.com](mailto:sparsh.jjwala@gmail.com)
