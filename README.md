@@ -55,20 +55,6 @@ any catalogue.
 
 ---
 
-### Outside the terminal
-
-I'm **President of Finance Studio**, a student org teaching financial literacy to
-economically disadvantaged communities. We cover the basics that actually compound —
-budgeting, saving, credit, how debt really works — for people who were never given
-access to any of it.
-
-I also built a
-[bilingual financial literacy chatbot](https://github.com/sparsh-j01/financial-literacy-chatbot)
-on Gemini so the material is reachable in more than one language, and outside
-session hours.
-
----
-
 ### Tools I reach for
 
 **Languages** TypeScript · Python · JavaScript · Java
