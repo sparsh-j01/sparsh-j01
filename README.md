@@ -87,7 +87,6 @@ session hours.
 
 ### Currently
 
-- Chasing **GitHub Foundations** and **Claude Architect** certs this month
 - Building the Ledgr matching engine
 - Trying to make LLMs do work that survives contact with production
 
@@ -97,4 +96,4 @@ session hours.
 
 [LinkedIn](https://www.linkedin.com/in/sparsh-jhunjhunwala/) ·
 [X](https://x.com/sparsh_jjwala) ·
-[sparsh.jjwala@gmail.com](mailto:sparsh.jjwala@gmail.com)
+[sparshjjwala.work@gmail.com](mailto:sparshjjwala.work@gmail.com)
