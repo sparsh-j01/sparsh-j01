@@ -8,6 +8,7 @@ I enjoy working on things where **latency, state, and correctness matter.**
 
 🔹 **[Maven AI](https://github.com/sparsh-j01/maven-ai)**
 Real-time voice mock interviews with adaptive conversations, live coding, and AI-scored feedback.
+
 `TypeScript` · `Python` · `LiveKit` · `Postgres`
 
 🔹 **[Atlas](https://github.com/sparsh-j01/atlas)**
