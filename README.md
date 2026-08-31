@@ -10,16 +10,19 @@ I enjoy working on things where **latency, state, and correctness matter.**
 Real-time voice mock interviews with adaptive conversations, live coding, and AI-scored feedback.
 `TypeScript` · `Python` · `LiveKit` · `Postgres`
 
-🔹 [**Atlas**](https://github.com/sparsh-j01/atlas)
+🔹 **[Atlas](https://github.com/sparsh-j01/atlas)**
 AI-powered classroom platform that turns PDFs and PowerPoint presentations into grounded, interactive learning experiences with hybrid RAG, OCR, and real-time classroom tools.
+
 `TypeScript` · `Next.js` · `Postgres` · `Gemini` · `RAG` · `OCR`
 
 🔹 **[OptiMarket](https://optimarket-psi.vercel.app)**
 Bond portfolio optimization running entirely in the browser with WebAssembly, SciPy, Monte Carlo VaR/CVaR, and real TRACE data.
+
 `Next.js` · `Python` · `Pyodide/WASM`
 
 🔹 **Ledgr**
 Paper trading platform currently focused on building the matching engine.
+
 `TypeScript` · `Node.js` · `Postgres`
 
 ### Currently
