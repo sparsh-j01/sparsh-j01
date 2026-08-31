@@ -1,4 +1,4 @@
-# Hey, I'm Sparsh 👋
+# Hello, I'm Sparsh 
 
 CSE undergrad building **real-time systems, AI products, and financial software.**
 
